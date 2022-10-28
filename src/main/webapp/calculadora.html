@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Calculadora</title>
+
+<style>
+	body{
+	background-color:Coral;
+	}
+	form{
+	background-color: cyan;
+	margin:300px auto;
+	width:20%;
+	}
+	form input[type=submit] {
+	align-items:center;
+	background-color: yellow;
+	margin:0px 120px;
+	
+	}
+	.div{
+	padding:10px;
+	border:5px solid white;
+	
+	}
+	h1{
+	text-align: center;	
+	color:white;
+	background-color:Maroon;
+	width:50%;
+	margin:50px auto;
+	}
+	input invalid{
+	border:2 px solid red;
+	}
+	input valid{
+	border:2px solid green;
+	}
+</style>
+
+</head>
+<body>
+<div class ="h1">
+<h1>CALCULADORA</h1>
+</div>
+	<form action="calcular" method="post" >
+	<div class="div">
+		<label for="numero">Número 1:</label>
+			<input type="number"  name="n1" id="numero" required>
+			<br>
+		<label for="numero">Número 2:</label>
+			<input type="number"  name="n2" id="numero2" required>
+			<br>
+			<br>
+		<label for="selected">Operação:</label>	
+		<select name="operacao" required>
+		<br>
+		<option value="operacao1">+</option>
+		<option value="operacao2">-</option>
+		<option value="operacao3">X</option>
+		<option value="operacao4">/</option>
+		
+		</select>
+		<br>
+		<br>
+		<input type="color" name="cor">
+		<br>
+		<br>
+		<input type="submit" Value="Calcular">	
+		</div>
+	</form>
+</body>
+</html>
